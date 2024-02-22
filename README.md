@@ -48,6 +48,22 @@
 $ cargo install mdbook --vers [version-num]
 ```
 
+## [New] 构建PDF
+
+可以使用 [mdbook-pdf](https://github.com/HollowMan6/mdbook-pdf/blob/main/README_CN.md#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98) 构建带书签的 PDF 文件。
+
+强烈建议使用 Linux 桌面发行版构建，mdbook-pdf 提供的容器使用的中文字体比较丑。
+
+一些修改已经应用在 fork 版本上，建议使用当前 fork 版本构建 PDF。
+
+具体步骤：
+
+- 进入本项目目录。
+- 安装定制版 mdbook：`cargo install --git https://github.com/HollowMan6/mdBook mdbook`
+- 安装 mdbook-pdf：`cargo install mdbook-pdf`
+- 安装 mdbook-pdf-outline：`pip install mdbook-pdf-outline`
+- 构建 PDF：`mdbook build`，带书签版本输出在 `book/pdf-outline/output.pdf`
+
 ## 构建
 
 构建此书，请输入：
